@@ -16,7 +16,7 @@ public class MinaServerHandler implements IoHandler {
 
 	public void inputClosed(IoSession arg0) throws Exception {
 		// TODO Auto-generated method stub
-
+		arg0.closeOnFlush();
 	}
 
 	public void messageReceived(IoSession session, Object message)
